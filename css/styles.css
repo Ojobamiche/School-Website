@@ -1,0 +1,693 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    background-color: rgb(255, 255, 227);
+}
+
+
+.logo{
+    display: inline-block;
+    color: blue;
+    font-size: 100px;
+    margin-left: 10px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #5d10eb;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(89, 49, 235);
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nan img{
+    width: 400px;
+}
+
+.menu {
+    list-style: row;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+    display: table-row;
+    text-align: center;
+    width: 80px;
+    box-shadow: #f3ebf0;
+    background-color: whitesmoke;
+
+}
+@media(max-width: 700){
+    .menu{
+        color: #f53b3b;
+    }
+}
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Add space between containers */
+    padding: 20px;
+    margin: auto;
+    color: blue;
+}
+
+.overlay {
+    /* Add your background image URL */
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+.dropdown {
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 10px;
+    text-align: center;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #2b07ad;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    text-shadow: none;
+    text-align: justify;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2b07ad;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.navLinks {
+    right: -200px;
+    /* Add other styling as needed */
+  }
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity and color as needed */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the text box */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.dropdown {
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 10px;
+    text-align: center;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+
+.text-box{
+    width: 100%;
+    color: blue;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p-ms{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: rgb(236, 117, 5);
+    text-align: center;
+    box-shadow: #3659f4;
+}
+.hero-btn{
+    display:flex;
+    text-decoration: none;
+    color: yellow;
+    border: 3px solid red;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+/*------------Welcome & Contact Form Page */
+
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-container,
+.contact-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 60;
+    text-align: center;
+}
+
+p-link{
+    color: green;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 17px;
+}
+p-a{
+    color: rgb(42, 1, 61);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-indent: center;
+    text-transform: none;
+    text-decoration: solid;
+    text-wrap: center;
+    
+}
+p{
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin: 0 auto; /* Center-align the button horizontally within the container */
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+form.img{
+    position: absolute;
+    justify-content: center;
+}
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    background-color: #0074b7;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1-li{
+    color: green;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 36px;
+}
+/*-------Reach Out to Us Page */
+
+.contact-container {
+    /* Replace 'your-image.jpg' with the image file path */
+    padding: 20px;
+    color: #ec0694; /* Change text color for better visibility */
+    text-align: center; /* Center-align text within the container */
+}
+
+/* Apply column layout for small screens (mobile) For Welcome Page */
+
+@media screen and (max-width: 767px) {
+    .homepage {
+        display: block; /* Change to a block layout for small screens */
+    }
+    .welcome-container, .contact-container {
+        width: 100%; /* Make each container take full width */
+    }
+}
+
+/* Apply flex layout for larger screens */
+@media screen and (min-width: 768px) {
+    .homepage {
+        display: flex; /* Change to a flex layout for larger screens */
+    }
+    .welcome-container, .contact-container {
+        flex: 1; /* Make each container share the available space equally */
+    }
+}
+
+
+/*---------------About Us & Meet the Founder Page-----------*/
+
+
+.new-section {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: solid blue;
+}
+h2-e{
+    color: green;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+}
+p-w{
+    color: white;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 17px;   
+}
+p-li{
+    color: rgb(28, 0, 128);
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/*----------------About Us & Meet the Founder-------*/
+
+.about-us-container,
+.founder-container {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* Apply column layout for small screens (mobile) */
+@media screen and (max-width: 767px) {
+    .new-section {
+        display: block; /* Change to a block layout for small screens */
+    }
+    .about-us-container,
+    .founder-container {
+        width: 100%; /* Make each container take full width */
+    }
+
+.img{
+    position:cover;
+}
+
+}
+
+/* Apply flex layout for larger screens */
+@media screen and (min-width: 768px) {
+    .new-section {
+        display: flex;
+        justify-content: center; /* Change to a flex layout for larger screens */
+    }
+    .about-us-container,
+    .founder-container {
+        flex: 1;
+         /* Make each container share the available space equally */
+    }
+}
+
+/*-------------Why Choose Future Driven School-------- */
+
+
+.why-choose-us {
+    display: table-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+    color: #3659f4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.facility-container,
+.security-container,
+.education-container,
+.character-education-container {
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Apply column layout for small screens (mobile) */
+@media screen and (max-width: 767px) {
+    .why-choose-us {
+        display: block; /* Change to a block layout for small screens */
+    }
+    .facility-container,
+    .security-container,
+    .education-container,
+    .character-education-container {
+        width: 100%;
+        text-align: center;
+        /* Make each container take full width */
+    }
+}
+
+/* Apply flex layout for larger screens */
+@media screen and (min-width: 768px) {
+    .why-choose-us {
+        display: flex; /* Change to a flex layout for larger screens */
+    }
+    .facility-container,
+    .security-container,
+    .education-container,
+    .character-education-container {
+        flex: 1; /* Make each container share the available space equally */
+    }
+}
+
+/*--------------Admission Page one----------*/
+.admission{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row-1{
+    margin: 5%;
+    display: table-row;
+    justify-content: space-between;
+}
+
+.admission-col{
+    flex-basis: 31%;
+    background: #4921fa;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.admission-col:hover{
+box-shadow: #ec0606;
+}
+@media(max-width: 700px){
+    .row-1{
+        flex-direction: column;
+    }
+    @media(min-width: 765px){
+        .row-1{
+            flex-direction: column;
+        }
+    }
+}
+
+
+/*--------------Admission Page----------*/
+.admission-page-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+    color: #f44336;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1-1{
+   text-align: center; 
+   color: aqua;
+   font-size: 50px;
+   font-weight: 800;
+}
+h2-mh{
+    color: #27eb0e;
+    font-size: 36px;
+    font-weight: 700;
+}
+h2-mi{
+    color: #2b07ad;
+    font-size: 36px;
+    font-weight: 700;
+}
+h2-mj{
+    color: #cbfa21;
+    font-size: 36px;
+    font-weight: 700;
+}
+h2-mk{
+    color: #f53bdc;
+    font-size: 36px;
+    font-weight: 700;
+}
+.admission-process-container,
+.admission-creche-container,
+.admission-nursery-container,
+.admission-primary-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Apply column layout for small screens (mobile) */
+@media screen and (max-width: 767px) {
+    .admission-page-us {
+        display: block; /* Change to a block layout for small screens */
+    }
+    .admission-process-container,
+    .admission-creche-container,
+    .admission-nursery-container,
+    .admission-primary-container {
+        width: 100%; /* Make each container take full width */
+    }
+}
+
+/* Apply flex layout for larger screens */
+@media screen and (min-width: 768px) {
+    .admission-page-us {
+        display: flex; /* Change to a flex layout for larger screens */
+    }
+    .admission-process-container,
+    .admission-creche-container,
+    .admission-nursery-container,
+    .admission-primary-container {
+        flex: 1; /* Make each container share the available space equally */
+    }
+}
+
+
+/*---------------School News Update & Youtube Channel Page------- */
+
+
+.school-calendar-news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar-news-container,
+.youtube-channel-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Apply column layout for small screens (mobile) */
+@media screen and (max-width: 767px) {
+    .school-calendar-news {
+        display: block; /* Change to a block layout for small screens */
+    }
+    .calendar-news-container,
+    .youtube-channel-container {
+        width: 100%; /* Make each container take full width */
+    }
+}
+
+/* Apply flex layout for larger screens */
+@media screen and (min-width: 768px) {
+    .school-calendar-news {
+        display: flex; /* Change to a flex layout for larger screens */
+    }
+    .calendar-news-container,
+    .youtube-channel-container {
+        flex: 1; /* Make each container share the available space equally */
+    }
+}
+
+/*--------------------footer page-------*/
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(132, 130, 226);
+    color: #06bb60;
+    padding: 22px;
+}
+p-y{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact-container,
+.address-container {
+    flex: 1;
+    padding: 22px;
+}
+
+/* Apply column layout for small screens (mobile) */
+@media screen and (max-width: 767px) {
+    .footer {
+        display: block; /* Change to a block layout for small screens */
+    }
+    .contact-container,
+    .address-container {
+        width: 100%; /* Make each container take full width */
+    }
+}
+
+/* Apply flex layout for larger screens */
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex; /* Change to a flex layout for larger screens */
+    }
+    .contact-container,
+    .address-container {
+        flex: 1; /* Make each container share the available space equally */
+    }
+}
